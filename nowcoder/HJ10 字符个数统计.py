@@ -22,7 +22,7 @@ def count_unique_characters(s):
     unique_chars = set()
     
     for char in s:
-        if 0 <= ord(char) <= 127:  # 检查字符是否在 ASCII 范围内
+        if 0 <= ord(char) <= 127 and char != '\n':  # 检查字符是否在 ASCII 范围内
             unique_chars.add(char)
     
     return len(unique_chars)
