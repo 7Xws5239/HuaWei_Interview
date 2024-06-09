@@ -1,5 +1,5 @@
-txt = "     banana     "
+test = "test string"
 
-x = txt.strip()
+s = test.split()
 
-print(x)
+print(s)
