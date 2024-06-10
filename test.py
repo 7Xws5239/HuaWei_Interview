@@ -1,5 +1,5 @@
-test = "test string"
+str = '12121212'
 
-s = test.split()
+num = str.count('1')
 
-print(s)
+print(num)
