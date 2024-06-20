@@ -28,3 +28,23 @@ https://ac.nowcoder.com/acm/contest/5657#question
 # print(sum)
 
 
+import sys
+
+sum = 0
+
+# 读取第一行，确定后续数据行数
+first_line = sys.stdin.readline().strip()
+n = int(first_line)
+
+# 如果第一行的数是0，则直接停止输入
+if n == 0:
+    print(sum)
+    sys.exit()
+
+# 读取后续的每一行数据并累加
+for _ in range(n):
+    line = sys.stdin.readline().strip()
+    number = int(line)
+    sum += number
+
+print(sum)
